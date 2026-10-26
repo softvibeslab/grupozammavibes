@@ -1,0 +1,49 @@
+{
+  "name": "Cerebro Zamna",
+  "port": 4646,
+  "sources": [
+    {
+      "id": "campana",
+      "label": "Campaña",
+      "paths": [
+        "sitio"
+      ],
+      "exclude": ["cerebro", "img"],
+      "color": "#046B49",
+      "staleDays": null,
+      "type": "markdown",
+      "short": "Campaña",
+      "blurb": "Landing, análisis y links publicados en la demo."
+    },
+    {
+      "id": "fuentes",
+      "label": "Fuentes",
+      "paths": [
+        "fuentes/redes-sociales.md",
+        "fuentes/benchmark.md"
+      ],
+      "color": "#A18443",
+      "staleDays": null,
+      "type": "markdown",
+      "short": "Fuentes",
+      "blurb": "Redes y benchmark usados para armar la campaña."
+    },
+    {
+      "id": "proyecto",
+      "label": "Proyecto",
+      "paths": [
+        "README.md",
+        "docs/inventario-previo.md",
+        "cliente.config.json"
+      ],
+      "color": "#0F3D36",
+      "staleDays": null,
+      "type": "markdown",
+      "short": "Proyecto",
+      "blurb": "Ficha del cliente, inventario y README."
+    }
+  ],
+  "version": 1,
+  "root": "..",
+  "maxNodes": 3000
+}

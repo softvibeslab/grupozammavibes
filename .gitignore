@@ -1,0 +1,23 @@
+# Dependencias instaladas y cachés
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Archivos del sistema y registros locales
+.DS_Store
+Thumbs.db
+*.log
+
+# Secretos locales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Cachés y rutas locales de Graphify
+/graphify-out/cache/
+/graphify-out/.graphify_python
+/graphify-out/.graphify_root
+/graphify-out/manifest.json

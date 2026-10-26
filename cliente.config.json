@@ -1,0 +1,56 @@
+{
+  "slug": "grupo-zamna-realty",
+  "nombre": "Grupo Zamna",
+  "marca": "Grupo Zamna · Real Estate · Technology · Interiors",
+  "nicho": "inmobiliaria boutique / master broker de desarrollo propio (real estate, ticket alto, bilingüe)",
+  "ciudad": "Playa del Carmen, Quintana Roo (oficina en Ejidal)",
+  "personas": [
+    {"nombre": "Eduardo Zamna", "cargo": "Commercial Director & AI Systems", "instagram": "https://www.instagram.com/eduardozamna/"},
+    {"nombre": "Alejandra Enríquez", "cargo": "Development Director, Marketing & Alliances", "instagram": "https://www.instagram.com/aleenriquez_realestate/"}
+  ],
+  "contacto": {
+    "whatsapp_sitio": "+52 984 136 2816",
+    "telefono_facebook_maps": "+52 984 203 0143",
+    "telefono_pranatowers_com": "+52 984 175 0294",
+    "email": "hola@grupozamna.com",
+    "sitio": "https://grupozamna.com",
+    "instagram": "https://www.instagram.com/grupozamna.realty/",
+    "facebook": "https://www.facebook.com/grupozamna.com.mx",
+    "tiktok": "https://www.tiktok.com/@grupozamna",
+    "linkedin_perfil": "https://www.linkedin.com/in/zamna-realestate",
+    "linkedin_empresa": "https://www.linkedin.com/company/zamna-real-estate",
+    "youtube": ["https://www.youtube.com/@GrupoZamna", "https://www.youtube.com/@zamnarealestate"],
+    "subdominios": ["https://network.grupozamna.com", "https://management.grupozamna.com", "https://studio.grupozamna.com"]
+  },
+  "cifras_reales": {
+    "fecha": "2026-10-25",
+    "instagram_seguidores": 390, "instagram_seguidos": 456, "instagram_publicaciones": 263,
+    "facebook_seguidores": 3139, "facebook_opiniones": 245, "facebook_recomiendan_pct": 100, "facebook_checkins": 999,
+    "tiktok_seguidores": 1112, "tiktok_videos": 80, "tiktok_likes": 2677, "tiktok_plays_promedio_ult16": 523,
+    "linkedin_perfil_seguidores": 134, "linkedin_empresa_seguidores": 6,
+    "propiedades_publicadas": 69, "articulos_blog": 15,
+    "prana_towers": {"unidades": 10, "m2": "91-120", "desde_mxn": 3200000, "avance": "85% (oct-2026)", "entrega": "marzo 2027", "google_maps": "4.8★ · 5 reseñas"},
+    "google_business_grupo_zamna": "no existe"
+  },
+  "diseno_actual": {
+    "plataforma": "Next.js en Vercel + Sanity CMS; GA4 + Pixel de Meta",
+    "fortalezas": "bilingüe con hreflang, JSON-LD RealEstateAgent, WhatsApp precargado por ficha (74), blog con autores",
+    "problemas": "0 etiquetas og:, 33 galerías en Google Drive, /servicios 404, datos internos de EasyBroker en el HTML, home carga propiedades en cliente ('Cargando propiedades...')"
+  },
+  "paleta": {"ink": "#071d1a", "deep": "#0f3d36", "leaf": "#046b49", "sand": "#d9c28d", "gold": "#a18443", "cream": "#f4f7f1", "fuentes": "Playfair Display + Montserrat (las de su marca)"},
+  "hallazgos": [
+    "Sin ficha de Google 'Grupo Zamna'; /oficina apunta a la ficha de Prana Towers, que apunta a pranatowers.com",
+    "Tres teléfonos públicos (NAP inconsistente)",
+    "pranatowers.com (tercero) dice 65% · Q2 2024 vs. 85% · marzo 2027 en su sitio",
+    "245 opiniones de Facebook (100%) invisibles en sitio/IG/schema",
+    "HTML público de fichas EasyBroker expone comisión 6.0%, internal_id y Gmail (EB-XE4095)",
+    "0 etiquetas Open Graph en 9 páginas revisadas",
+    "Marca partida: Grupo Zamna / Zamna Real Estate / Almaré, 7 handles, LinkedIn personal enlazado",
+    "Contenido de bajo alcance (IG 390 seg / 263 posts; TikTok ~523 plays) + 33 galerías en Drive + /servicios 404"
+  ],
+  "productos_estrella": ["Prana Towers (master broker)", "Villas Almaré", "Reventa/renta Ciudad Mayakoba", "Zamna Network", "Zamna Interiors", "Zamna Property Management"],
+  "gancho": "TikTok 30-sep-2026 «¿Qué opinan los Brokers de PRANA TOWERS?» https://www.tiktok.com/@grupozamna/video/7691466271640096052",
+  "competidores": ["Plalla Real Estate (4.9·47)", "Playa Realtors (4.9·148)", "RE/MAX Maya (4.9·145)", "TOP Mexico Real Estate (4.5·41)", "The Agency Riviera Maya (4.7·41)", "Bruno Real Estate (5.0·20)", "Tulum Investor", "MAYAMI Real Estate"],
+  "tiers_mxn": [2500, 4900, 8900],
+  "pendientes": ["Confirmar qué teléfono quieren como oficial", "Link de pago del tier Cimiento", "Fotos en alta de Prana Towers", "Citas textuales de opiniones de Facebook (requieren ver la página; no se copiaron)"]
+}

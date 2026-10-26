@@ -1,0 +1,89 @@
+{
+  "fecha": "2026-10-25 19:13",
+  "slug_sugerido": "grupozamna-realty",
+  "fuentes": [
+    {
+      "url": "https://www.instagram.com/grupozamna.realty/",
+      "plataforma": "instagram",
+      "handle": "grupozamna.realty",
+      "status": 200,
+      "url_final": "https://www.instagram.com/grupozamna.realty/",
+      "segundos": 1.41,
+      "bytes_html": 844005,
+      "headers": {
+        "content-type": "text/html; charset=\"utf-8\""
+      },
+      "titulo": "GRUPO ZAMNA (@grupozamna.realty) • Fotos y videos de Instagram",
+      "og": {
+        "title": "GRUPO ZAMNA (@grupozamna.realty) • Fotos y videos de Instagram",
+        "description": "390 seguidores, 456 seguidos, 263 publicaciones - Ver fotos y videos de Instagram de GRUPO ZAMNA (@grupozamna.realty)",
+        "image": "https://scontent.cdninstagram.com/v/t51.82787-19/845902734_17890163472683623_2526362114847429478_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=8F9TpJP1mKkQ7kNvwFgHTF2&_nc_oc=AdrSoLoo1IwMte4N4wfk0MyWk0I2LA6x-BCE29F-DhZNot2VknLWuI-wNoTcVnp9wNfnCJjLxbxab65PlG0waBD-&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=mpxg6cvXCAW-3PDXCXNq7A&_nc_ss=7f60f&oh=00_AQPOKMSEjA9mlsTx5LVzclowqvgDGgc7Vs3aHXI0uvq3zQ&oe=6AE475E6",
+        "type": "profile",
+        "site_name": null
+      },
+      "descripcion": "390 seguidores 456 seguidos, 263 publicaciones - GRUPO ZAMNA (@grupozamna.realty) en Instagram: \"Real Estate · Technology · Interiors\nPropiedades, innovación y espacios con esencia.\n📍 Riviera Maya\nConecta con nosotros ↓\"",
+      "cifras": {
+        "seguidores": 390,
+        "seguidos": 456,
+        "publicaciones": 263
+      },
+      "enlaces_contacto": [],
+      "captura_escritorio": "/tmp/chamba-zamna/fuentes/capturas/01-instagram-desktop.png",
+      "captura_movil": "/tmp/chamba-zamna/fuentes/capturas/01-instagram-movil.png"
+    },
+    {
+      "url": "https://grupozamna.com/",
+      "plataforma": "sitio_web",
+      "handle": "grupozamna.com",
+      "status": 200,
+      "url_final": "https://grupozamna.com/",
+      "segundos": 0.38,
+      "bytes_html": 51265,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "Vercel"
+      },
+      "titulo": "Grupo Zamna | Bienes Raíces en Riviera Maya",
+      "og": {
+        "title": null,
+        "description": null,
+        "image": null,
+        "type": null,
+        "site_name": null
+      },
+      "descripcion": "Compra, renta, vende o invierte en propiedades de Playa del Carmen y la Riviera Maya con acompañamiento local, tecnología y una red comercial.",
+      "cifras": {},
+      "enlaces_contacto": [
+        "https://wa.me/529841362816?text=Hola%20Grupo%20Zamna",
+        "https://www.facebook.com/grupozamna.com.mx",
+        "https://www.instagram.com/grupozamna.realty/",
+        "https://www.tiktok.com/@grupozamna"
+      ],
+      "auditoria": {
+        "viewport_movil": true,
+        "json_ld": 2,
+        "generador": null,
+        "wordpress": false,
+        "wix": false,
+        "formularios": 1,
+        "whatsapp_links": 1,
+        "whatsapp_sin_texto": [],
+        "usa_linkinbio": false,
+        "imagenes": 6,
+        "h1": [
+          "Compra, renta o vende."
+        ]
+      },
+      "imagenes": [
+        "https://grupozamna.com/_next/image?url=%2Fbrand%2Fgrupo-zamna-negative.webp&w=3840&q=75",
+        "https://www.facebook.com/tr?id=1820867511794444&ev=PageView&noscript=1",
+        "https://grupozamna.com/_next/image?url=%2Fimages%2Fprojects%2Fprana-hero.jpg&w=3840&q=75",
+        "https://grupozamna.com/images/projects/home-2.jpg",
+        "https://grupozamna.com/images/office/prana-exterior.jpg",
+        "https://grupozamna.com/brand/grupo-zamna-positive.webp"
+      ],
+      "captura_escritorio": "/tmp/chamba-zamna/fuentes/capturas/02-sitio_web-desktop.png",
+      "captura_movil": "/tmp/chamba-zamna/fuentes/capturas/02-sitio_web-movil.png"
+    }
+  ]
+}

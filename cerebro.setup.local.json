@@ -1,0 +1,27 @@
+{
+  "name": "Cerebro Zamna",
+  "port": 4646,
+  "sources": [
+    {
+      "id": "campana",
+      "label": "Campaña",
+      "paths": ["sitio"],
+      "color": "#046B49",
+      "staleDays": null
+    },
+    {
+      "id": "fuentes",
+      "label": "Fuentes",
+      "paths": ["fuentes/redes-sociales.md", "fuentes/benchmark.md"],
+      "color": "#A18443",
+      "staleDays": null
+    },
+    {
+      "id": "proyecto",
+      "label": "Proyecto",
+      "paths": ["README.md", "docs/inventario-previo.md", "cliente.config.json"],
+      "color": "#0F3D36",
+      "staleDays": null
+    }
+  ]
+}

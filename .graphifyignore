@@ -1,0 +1,15 @@
+# Cerebro público de la demo. Sin borradores de outreach ni capturas crudas.
+/outreach/
+/fuentes/*.html
+/fuentes/captura-report.json
+/deploy/
+/sitio/img/
+/sitio/cerebro/
+/cerebro-app/
+/graphify-out/
+*.jpg
+*.png
+*.webp
+*.log
+.DS_Store
+*.local.json

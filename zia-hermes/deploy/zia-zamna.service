@@ -1,0 +1,23 @@
+[Unit]
+Description=ZÍA Grupo Zamna — puente público aislado hacia un perfil de Hermes
+After=network-online.target
+
+[Service]
+User=ziazamna
+Group=ziazamna
+WorkingDirectory=/opt/zia-zamna
+EnvironmentFile=/var/lib/zia-zamna/service.env
+ExecStart=/usr/local/lib/hermes-agent/venv/bin/python /opt/zia-zamna/server.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/zia-zamna
+UMask=0077
+MemoryMax=1200M
+TasksMax=64
+
+[Install]
+WantedBy=multi-user.target

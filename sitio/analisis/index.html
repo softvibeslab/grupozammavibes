@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Análisis de presencia digital · Grupo Zamna</title>
+<meta name="description" content="Análisis de la presencia digital de Grupo Zamna: lo que ya hacen muy bien, 8 fugas verificables y cómo se resuelven. Preparado por Softvibes Lab." />
+<meta property="og:title" content="Grupo Zamna · Análisis de presencia digital" />
+<meta property="og:description" content="8 fugas verificables en el embudo digital de Grupo Zamna, y cómo se resuelven." />
+<meta property="og:image" content="https://zamna.softvibes.art/img/prana-pool.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#071d1a;--deep:#0f3d36;--leaf:#046b49;--sand:#d9c28d;--gold:#a18443;
+    --cream:#f4f7f1;--paper:#fbfaf6;--text:#22302c;--muted:#5d6b66;--line:#e2e4dc;
+    --red:#c8473d;--green:#1f8a5b;--wa:#25D366;
+    --shadow:0 18px 50px -20px rgba(7,29,26,.32);--radius:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Montserrat,system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.6;padding-bottom:76px}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.14;color:var(--ink)}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  section{padding:76px 0}
+  .eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.92rem;cursor:pointer;border:none;transition:.2s;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-sand{background:var(--sand);color:var(--ink);box-shadow:0 10px 24px -8px rgba(217,194,141,.7)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -8px rgba(37,211,102,.55)}
+
+  /* Hero */
+  .ah{position:relative;color:#fff;padding:96px 0 70px;overflow:hidden;background:var(--ink)}
+  .ah .bg{position:absolute;inset:0;background:url(../img/prana-pool.jpg) center/cover;opacity:.32}
+  .ah::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--ink) 30%,rgba(7,29,26,.55))}
+  .ah .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+  .ah h1{color:#fff;font-size:clamp(2rem,4.6vw,3.2rem);margin:14px 0}
+  .ah h1 em{color:var(--sand)}
+  .ah p{color:#c9d6d0;max-width:52ch}
+  .who{margin-top:24px;display:flex;align-items:center;gap:14px}
+  .who img{width:70px;height:70px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--sand)}
+  .who b{display:block}.who span{color:#a9bdb5;font-size:.86rem}
+  .ah-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:26px;text-align:center;backdrop-filter:blur(8px)}
+  .ah-card .date{font-size:.76rem;color:var(--sand);font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .ah-card .big{font-family:"Playfair Display",serif;font-size:3.4rem;margin:4px 0;color:#fff}
+  .ah-card small{color:#c9d6d0;font-size:.88rem}
+
+  /* Counters */
+  .counters{background:#fff;border-bottom:1px solid var(--line)}
+  .counters .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:34px 22px}
+  .counters .c{text-align:center}
+  .counters .n{font-family:"Playfair Display",serif;font-size:2.2rem;color:var(--leaf)}
+  .counters small{color:var(--muted);font-weight:600;font-size:.78rem;display:block;line-height:1.35}
+
+  .shead{max-width:680px;margin:0 auto 44px;text-align:center}
+  .shead h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:12px 0}
+  .shead p{color:var(--muted)}
+
+  .note{background:#fff;border:1px solid var(--line);border-left:4px solid var(--sand);border-radius:14px;padding:22px 24px;max-width:840px;margin:0 auto;color:var(--muted);font-size:.95rem}
+  .note b{color:var(--ink)}
+
+  /* Lo que ya hacen bien */
+  .good{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:960px;margin:0 auto}
+  .good div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+  .good b{display:block;color:var(--leaf);margin-bottom:4px}
+  .good p{font-size:.88rem;color:var(--muted)}
+
+  /* Polaroids */
+  .pola{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin:10px 0 0}
+  .pola figure{background:#fff;padding:12px 12px 16px;box-shadow:var(--shadow);width:250px;transform:rotate(-3deg);transition:transform .3s}
+  .pola figure:nth-child(2){transform:rotate(2deg) translateY(-12px)}
+  .pola figure:nth-child(3){transform:rotate(-1deg)}
+  .pola figure:hover{transform:rotate(0) scale(1.04)}
+  .pola img{aspect-ratio:1;object-fit:cover;width:100%}
+  .pola figcaption{font-family:"Playfair Display",serif;font-style:italic;text-align:center;margin-top:10px;color:var(--ink);font-size:.95rem}
+
+  /* Antes */
+  .antes{background:var(--cream)}
+  .browsers{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:14px}
+  .browser{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+  .browser .bar{background:#e9ece4;padding:9px 14px;display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--line)}
+  .browser .bar i{width:11px;height:11px;border-radius:50%;background:#c4cabd;display:inline-block}
+  .browser .bar span{margin-left:10px;font-size:.75rem;color:#6d776f;font-weight:600}
+  .browser .cap{height:260px;overflow:hidden}
+  .browser .cap img{width:100%}
+  .chaos{list-style:none;display:grid;gap:10px;max-width:840px;margin:22px auto 0}
+  .chaos li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
+  .chaos .x{flex:none;width:24px;height:24px;border-radius:50%;background:#fbe9e7;color:var(--red);display:grid;place-items:center;font-weight:700;font-size:.85rem}
+
+  /* Hallazgos */
+  .find{max-width:860px;margin:0 auto;display:grid;gap:14px}
+  details.h{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}
+  details.h[open]{box-shadow:var(--shadow);border-color:transparent}
+  details.h summary{padding:20px 24px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;font-weight:600;color:var(--ink);font-size:1.02rem}
+  details.h summary::-webkit-details-marker{display:none}
+  details.h .ic{flex:none;width:44px;height:44px;border-radius:12px;background:#fbe9e7;color:var(--red);display:grid;place-items:center;font-size:1.2rem}
+  details.h .arw{margin-left:auto;color:var(--gold);font-size:1.4rem;transition:.2s}
+  details.h[open] .arw{transform:rotate(45deg)}
+  .hbody{padding:0 24px 22px 82px}
+  .prob{color:#7a3a33;background:#fdf3f1;border:1px solid #f3d6d1;border-radius:12px;padding:12px 14px;font-size:.92rem;margin-bottom:12px}
+  .sol{background:#ebf7f0;border:1px solid #c6e7d4;border-radius:12px;padding:12px 14px;font-size:.92rem;color:#145a3c;display:flex;gap:10px}
+  .sol b{color:var(--green)}
+  .ev{font-size:.78rem;color:#8a948f;margin-top:10px}
+  .ev a{text-decoration:underline}
+
+  /* Ahora */
+  .ahora{background:var(--ink);color:#fff}
+  .ahora .shead h2{color:#fff}.ahora .shead p{color:#b9c9c2}
+  .devsel{display:flex;gap:8px;justify-content:center;margin-bottom:22px;flex-wrap:wrap}
+  .devsel button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#cfdcd6;padding:10px 18px;border-radius:999px;font:600 .86rem Montserrat,sans-serif;cursor:pointer}
+  .devsel button.on{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+  .stage{display:flex;justify-content:center;margin-bottom:26px}
+  .device{background:#000;border-radius:22px;padding:12px;box-shadow:0 30px 70px -30px #000;transition:max-width .4s ease;width:100%;max-width:980px}
+  .device.tablet{max-width:600px}.device.phone{max-width:350px}
+  .device iframe{width:100%;height:580px;border:0;border-radius:12px;background:#fff;display:block}
+  .device.phone iframe{height:640px}
+  .tour{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .tour button{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:16px 12px;color:#eaf1ee;cursor:pointer;text-align:left;font-family:Montserrat,sans-serif;transition:.2s}
+  .tour button:hover,.tour button.on{background:rgba(255,255,255,.12);border-color:var(--sand)}
+  .tour .step{font-family:"Playfair Display",serif;font-size:1.3rem;color:var(--sand)}
+  .tour b{display:block;font-size:.88rem;margin-top:4px}
+  .tour span{font-size:.74rem;color:#a9bdb5}
+
+  /* Benchmark */
+  .bench{max-width:980px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:auto;box-shadow:var(--shadow)}
+  table{width:100%;border-collapse:collapse;font-size:.86rem;min-width:720px}
+  th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:center}
+  th{background:var(--ink);color:#fff;font-weight:600;font-size:.8rem}
+  td:first-child,th:first-child{text-align:left;font-weight:600;color:var(--ink)}
+  td.you{background:#fbf6e9;font-weight:600}
+  .yes{color:var(--green);font-weight:700}.no{color:var(--red);font-weight:700}
+  .benchnote{max-width:980px;margin:14px auto 0;font-size:.78rem;color:var(--muted)}
+  .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:980px;margin:26px auto 0}
+  .gaps div{background:var(--cream);border-radius:16px;padding:18px}
+  .gaps b{color:var(--ink);display:block;margin-bottom:4px}
+  .gaps p{font-size:.86rem;color:var(--muted)}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg,var(--deep),var(--ink));color:#fff;text-align:center}
+  .cta h2{color:#fff}
+  .cta p{color:#c3d2cb;max-width:58ch;margin:0 auto 26px}
+  .pulse{animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(217,194,141,.6)}70%{box-shadow:0 0 0 16px rgba(217,194,141,0)}100%{box-shadow:0 0 0 0 rgba(217,194,141,0)}}
+
+  /* Tiers */
+  .tiers{background:var(--cream)}
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+  .tier{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;display:flex;flex-direction:column;position:relative}
+  .tier.star{border:2px solid var(--sand);box-shadow:var(--shadow);transform:translateY(-6px)}
+  .tier .lbl{font-family:"Playfair Display",serif;font-size:1.45rem;color:var(--ink)}
+  .tier .star-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sand);color:var(--ink);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px}
+  .tier .price{font-family:"Playfair Display",serif;font-size:2.2rem;color:var(--leaf);margin:10px 0 2px}
+  .tier .price small{font-size:.86rem;color:var(--muted);font-family:Montserrat,sans-serif}
+  .tier ul{list-style:none;margin:18px 0;display:grid;gap:10px;flex:1}
+  .tier li{font-size:.88rem;display:flex;gap:9px}
+  .tier li::before{content:"✓";color:var(--green);font-weight:700}
+  .tier .btn{width:100%;justify-content:center}
+
+  footer{background:#04110f;color:#7f948c;padding:34px 0;font-size:.8rem;text-align:center}
+  footer p{max-width:760px;margin:0 auto 8px}
+
+  .fbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(7,29,26,.97);backdrop-filter:blur(8px);color:#fff;padding:12px 0}
+  .fbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .fbar b{font-size:.94rem}.fbar span{color:#a9bdb5;font-size:.8rem;display:block}
+  .fbar .btn{padding:11px 20px}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.7,.24,1),transform .7s cubic-bezier(.22,.7,.24,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:880px){
+    .ah .wrap,.browsers,.tgrid,.good,.gaps{grid-template-columns:1fr}
+    .counters .wrap{grid-template-columns:1fr 1fr}
+    .tour{grid-template-columns:1fr 1fr}
+    .tier.star{transform:none}
+    .hbody{padding:0 18px 20px}
+    .fbar .wrap>div:first-child{display:none}
+    .fbar .wrap{justify-content:center}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+
+<header class="ah">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Análisis de presencia digital · octubre 2026</span>
+      <h1>Eduardo, Ale: ya construyeron la casa. <em>Ahora falta que Google y los compradores encuentren la puerta.</em></h1>
+      <p>Un diagnóstico honesto de lo que Grupo Zamna ya hace mejor que la mayoría en la Riviera Maya, y de 8 fugas concretas que hoy dejan ir confianza y conversaciones. Lo preparé como un regalo, solo con información pública.</p>
+      <div class="who">
+        <img src="../img/prana-eduardo-ale.jpg" alt="Eduardo Zamna y Alejandra Enríquez frente a Prana Towers" />
+        <div><b>Grupo Zamna</b><span>Real Estate · Technology · Interiors · Playa del Carmen</span></div>
+      </div>
+    </div>
+    <div class="ah-card">
+      <div class="date">25 de octubre de 2026</div>
+      <div class="big">8</div>
+      <small>fugas verificables en el embudo digital, cada una con su evidencia y su solución</small>
+    </div>
+  </div>
+</header>
+
+<div class="counters">
+  <div class="wrap">
+    <div class="c"><div class="n" data-count="245">0</div><small>opiniones en Facebook (100% recomienda)</small></div>
+    <div class="c"><div class="n" data-count="3139">0</div><small>seguidores en Facebook</small></div>
+    <div class="c"><div class="n" data-count="390">0</div><small>seguidores en Instagram</small></div>
+    <div class="c"><div class="n" data-count="80">0</div><small>videos en TikTok</small></div>
+    <div class="c"><div class="n" data-count="0">0</div><small>fichas de Google con el nombre «Grupo Zamna»</small></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="note">
+      <b>Antes de empezar, con total transparencia:</b> este análisis usa únicamente información <b>pública</b> (grupozamna.com, sus redes, Google Maps y portales), consultada el 25 de octubre de 2026. No entré a ninguna cuenta. Si algo no les parece o prefieren que lo retire, lo quito de inmediato. Y lo importante: ustedes ya tienen lo más difícil. Un sitio propio rápido y bilingüe, WhatsApp precargado por propiedad, un blog con 15 artículos y <b>245 personas que los recomiendan</b>. Lo que sigue son ajustes de alto impacto, no empezar de cero.
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead"><span class="eyebrow">Lo que ya hacen muy bien</span><h2>Mejor punto de partida que el 80% del mercado</h2></div>
+    <div class="good reveal">
+      <div><b>Sitio propio y moderno</b><p>Next.js en Vercel, ES/EN con hreflang, JSON-LD de RealEstateAgent, sitemap y Pixel de Meta.</p></div>
+      <div><b>WhatsApp con contexto</b><p>74 botones en /propiedades, cada uno con el nombre y el código de la ficha. Pocos competidores lo hacen.</p></div>
+      <div><b>Contenido que educa</b><p>Blog con autores reales: precios 2026, preventa vs. entrega, Cruz de Servicios. Es el tipo de contenido que posiciona.</p></div>
+    </div>
+    <div class="pola reveal" style="margin-top:44px">
+      <figure><img src="../img/prana-hero.jpg" alt="Prana Towers" loading="lazy"><figcaption>Prana Towers · 10 unidades</figcaption></figure>
+      <figure><img src="../img/prana-eduardo-ale.jpg" alt="Eduardo y Ale" loading="lazy"><figcaption>El equipo detrás</figcaption></figure>
+      <figure><img src="../img/prana-rooftop.jpg" alt="Spa en el rooftop" loading="lazy"><figcaption>Bienestar en el rooftop</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="antes">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow" style="color:var(--red)">El «antes»</span>
+      <h2>La confianza existe, pero está repartida en demasiados lugares</h2>
+      <p>Un comprador que los busca hoy encuentra tres teléfonos, tres marcas y ninguna ficha de Google propia.</p>
+    </div>
+    <div class="browsers reveal">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>grupozamna.com</span></div><div class="cap"><img src="img/antes-sitio.jpg" alt="Portada de grupozamna.com" /></div></div>
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>instagram.com/grupozamna.realty</span></div><div class="cap"><img src="img/antes-ig.jpg" alt="Perfil de Instagram de Grupo Zamna" /></div></div>
+    </div>
+    <ul class="chaos">
+      <li><span class="x">!</span><span><b>263 publicaciones en Instagram para 390 seguidores</b>, y siguen a 456 cuentas. El esfuerzo de contenido no se convierte en audiencia.</span></li>
+      <li><span class="x">!</span><span><b>Las 245 opiniones de Facebook no aparecen</b> en el sitio, en Instagram ni en Google.</span></li>
+      <li><span class="x">!</span><span><b>Grupo Zamna, Zamna Real Estate y Almaré</b> firman el mismo contenido con teléfonos distintos.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Hallazgos</span>
+      <h2>8 fugas, y cómo se resuelven</h2>
+      <p>Toquen cada una para ver la evidencia y la solución.</p>
+    </div>
+    <div class="find">
+      <details class="h" open>
+        <summary><span class="ic">📍</span> No existe una ficha de Google «Grupo Zamna» <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">Al buscar «Grupo Zamna» en Google Maps aparecen el hotel Zamna Tulum y Plaza Zamna. El botón «Cómo llegar» de /oficina lleva a la ficha de <b>Prana Towers</b> (4.8★, 5 reseñas), y esa ficha manda a pranatowers.com, no a su sitio. Para «inmobiliaria Playa del Carmen», hoy no compiten.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> crear y verificar la ficha «Grupo Zamna · Inmobiliaria» con dirección completa, categoría, horario, fotos de la oficina y botón de cita, enlazada a grupozamna.com. Luego, un flujo para pedir reseñas al cierre de cada operación.</span></div>
+          <p class="ev">Evidencia: búsqueda en Google Maps del 25-oct-2026; enlace de grupozamna.com/oficina → place «Prana Towers» (place_id ChIJNQsmLwBDTo8RjJrIFPYjjzs).</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">☎️</span> Tres teléfonos públicos distintos <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">El sitio publica el <b>984 136 2816</b>. Facebook, las fichas de Maps de Prana Towers y Almaré y los captions de TikTok usan el <b>984 203 0143</b>. pranatowers.com usa un tercero, el <b>984 175 0294</b>. Google penaliza la inconsistencia de nombre, dirección y teléfono (NAP), y el cliente no sabe cuál es el oficial.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> un solo número comercial (WhatsApp Business) y la misma dirección completa en el sitio, Google, Facebook, TikTok y portales.</span></div>
+          <p class="ev">Evidencia: grupozamna.com (footer y JSON-LD), facebook.com/grupozamna.com.mx, pranatowers.com. Detalle en fuentes/redes-sociales.md.</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">🏗️</span> pranatowers.com cuenta otra historia <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">La ficha de Google de su desarrollo estrella lleva a pranatowers.com, una landing de terceros que todavía dice <b>«65% de avance · entrega Q2 2024»</b> y tiene otro teléfono. Su sitio dice <b>«85% · marzo 2027»</b>. Al inversionista que compara, dos versiones del mismo proyecto le restan confianza justo donde más pesa.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> cambiar el sitio de la ficha de Prana Towers a grupozamna.com/prana-towers (o redirigir el dominio) y publicar el avance de obra fechado, con foto, cada mes.</span></div>
+          <p class="ev">Evidencia: <a href="https://pranatowers.com" target="_blank" rel="noopener">pranatowers.com</a> vs. <a href="https://grupozamna.com/prana-towers" target="_blank" rel="noopener">grupozamna.com/prana-towers</a>, 25-oct-2026.</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">⭐</span> 245 opiniones al 100% que nadie ve <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">En Facebook, el 100% de 245 opiniones los recomienda. Es su mejor activo de confianza, y no aparece ni en el sitio, ni en Instagram, ni en el schema (no hay aggregateRating). Los competidores mejor calificados ponen sus reseñas arriba del pliegue.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> sección de opiniones en el sitio con citas reales y nombre, el rating en el JSON-LD y un highlight fijo de «Opiniones» en Instagram.</span></div>
+          <p class="ev">Evidencia: facebook.com/grupozamna.com.mx (245 opiniones, 3,139 seguidores, 999 check-ins).</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">🔒</span> El HTML público expone datos internos de las fichas <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">Las fichas importadas de EasyBroker incrustan el objeto completo del CRM en el código de la página. Por ejemplo, en /propiedades/EB-XE4095 cualquiera puede leer la <b>comisión del 6.0%</b>, el ID interno «PALMARA-UPE012» y el correo almarerealestate@gmail.com. Lo puede ver un competidor o un cliente que negocia.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> filtrar en el servidor los campos que se pasan al componente (solo precio, fotos y descripción). Es un cambio pequeño para su equipo de AI & Systems.</span></div>
+          <p class="ev">Evidencia: código fuente de grupozamna.com/propiedades/EB-XE4095 (copia en fuentes/). No se descargó ni se difundió nada más.</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">🔗</span> Enlaces compartidos sin imagen ni título <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">Ninguna de las 9 páginas revisadas (inicio, /propiedades, /prana-towers, /blog, /equipo, /oficina…) tiene etiquetas Open Graph. Cuando un asesor manda una ficha por WhatsApp o alguien comparte un artículo del blog, el enlace llega sin foto, sin precio y sin título atractivo. En un negocio que vende por WhatsApp, esto pesa.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> og:title, og:description y og:image por página (en las fichas, la foto principal y el precio). En Next.js se resuelve con <code>generateMetadata</code>.</span></div>
+          <p class="ev">Evidencia: inspección del HTML de 9 páginas el 25-oct-2026; 0 etiquetas og: o twitter:.</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">🧭</span> Marca partida: 3 nombres y 7 cuentas <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">Instagram @grupozamna.realty, Facebook /grupozamna.com.mx, TikTok @grupozamna firmado como «Almaré Real Estate», YouTube @GrupoZamna vacío y @zamnarealestate con 2 videos. En LinkedIn, el sitio enlaza un perfil personal (134 seguidores) en lugar de la página de empresa (6 seguidores, marcada como «empresa pública»). En EasyBroker la marca aparece como «Grupio Zamna».</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> una arquitectura de marca clara (Grupo Zamna como paraguas; Almaré y Prana como unidades), handles unificados, un YouTube y la página de empresa de LinkedIn como oficial.</span></div>
+          <p class="ev">Evidencia: tabla completa de 19 presencias en fuentes/redes-sociales.md.</p>
+        </div>
+      </details>
+      <details class="h">
+        <summary><span class="ic">📉</span> Mucho contenido, poco alcance (y fotos fuera del sitio) <span class="arw">+</span></summary>
+        <div class="hbody">
+          <p class="prob">En TikTok, los últimos 16 videos promedian unas 520 reproducciones y suman 4 comentarios. En Instagram, 263 posts con estética de flyer (renders + texto) no pasan de 390 seguidores. Y en /propiedades, 33 fichas mandan a «Fotos en Drive»: el interesado sale del sitio, se pierde el Pixel y no hay retargeting. Además, /servicios, que está en el menú, da error 404.</p>
+          <div class="sol"><span>✅</span><span><b>Solución:</b> formatos que la gente sí comenta (Eduardo y Ale a cámara, avance de obra fechado, «¿cuánto rinde este depa?»), galerías dentro del sitio y corregir el 404.</span></div>
+          <p class="ev">Evidencia: tiktok.com/@grupozamna (1,112 seguidores, 80 videos); grupozamna.com/propiedades (33 enlaces a drive.google.com); grupozamna.com/servicios → 404.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="ahora">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">El «ahora»</span>
+      <h2>Así se vería una landing de campaña sin esas fugas</h2>
+      <p>Un demo real y funcionando, pensado para anuncios y para la bio: bilingüe, con calculadora de rendimiento y WhatsApp con contexto en cada botón. Cámbienlo de dispositivo y recórranlo.</p>
+    </div>
+    <div class="devsel">
+      <button data-dev="laptop" class="on">💻 Laptop</button>
+      <button data-dev="tablet">📋 Tablet</button>
+      <button data-dev="phone">📱 iPhone</button>
+    </div>
+    <div class="stage"><div class="device" id="device"><iframe id="demo" src="../" title="Demo Grupo Zamna" loading="lazy"></iframe></div></div>
+    <div class="tour">
+      <button data-go="" class="on"><span class="step">1</span><b>Inicio bilingüe</b><span>Prana + 245 opiniones</span></button>
+      <button data-go="#prana"><span class="step">2</span><b>Prana Towers</b><span>Galería propia, sin Drive</span></button>
+      <button data-go="#invertir"><span class="step">3</span><b>Calculadora</b><span>Con una ficha real</span></button>
+      <button data-go="#propiedades"><span class="step">4</span><b>Selección</b><span>WhatsApp por ficha</span></button>
+      <button data-go="links/"><span class="step">5</span><b>/links</b><span>Para la bio de IG</span></button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Comparativa</span>
+      <h2>Frente a 8 inmobiliarias de Playa del Carmen y Tulum</h2>
+      <p>Las mejor calificadas no tienen mejor inventario: tienen la confianza a la vista.</p>
+    </div>
+    <div class="bench reveal">
+      <table>
+        <thead><tr><th>Elemento</th><th>Grupo Zamna hoy</th><th>Plalla</th><th>Playa Realtors</th><th>RE/MAX Maya</th><th>TOP Mexico RE</th></tr></thead>
+        <tbody>
+          <tr><td>Ficha de Google propia</td><td class="you no">✗ no existe</td><td>4.9★ · 47</td><td>4.9★ · 148</td><td>4.9★ · 145</td><td>4.5★ · 41</td></tr>
+          <tr><td>Seguidores en Instagram</td><td class="you">390</td><td>415</td><td>162K</td><td>n/d</td><td>2,194</td></tr>
+          <tr><td>Sitio bilingüe</td><td class="you yes">✓ ES/EN</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗ EN</td><td class="no">✗ EN</td></tr>
+          <tr><td>WhatsApp por propiedad</td><td class="you yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td>n/d</td><td class="yes">✓ (+1)</td></tr>
+          <tr><td>Calculadora de rendimiento</td><td class="you">✗ (✓ en demo)</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+          <tr><td>Reseñas a la vista en el sitio</td><td class="you no">✗ (245 en FB)</td><td class="yes">✓ Google</td><td class="yes">✓</td><td class="yes">✓ Google</td><td class="yes">✓ video</td></tr>
+          <tr><td>Desarrollo propio como master broker</td><td class="you yes">✓ Prana</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="benchnote">Fuentes: sitios oficiales y Google Maps, consultados el 25-oct-2026. Las cifras de Instagram de terceros vienen de snippets públicos: tómenlas como orden de magnitud. Detalle en fuentes/benchmark.md.</p>
+    <div class="gaps reveal">
+      <div><b>Hueco 1 · ROI verificable</b><p>Solo Plalla tiene calculadora, y es genérica. Prana Towers puede publicar escenarios por unidad en MXN y USD.</p></div>
+      <div><b>Hueco 2 · Asistente bilingüe</b><p>Ninguno de los 8 tiene un asistente conversacional que califique y pase el caso a WhatsApp. Ustedes ya tienen a ZÍA en el código.</p></div>
+      <div><b>Hueco 3 · Español primero</b><p>4 de los 8 solo atienden en inglés: el inversionista mexicano y latino está desatendido.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <span class="eyebrow">Una pregunta, no una venta</span>
+    <h2 style="margin:12px 0 14px">¿Qué les pareció el demo?</h2>
+    <p>Me encantaría saber su opinión, aunque sea en dos líneas. Si les sirve, las 3 correcciones más rápidas (Google, teléfono único y Open Graph) se pueden resolver en una semana.</p>
+    <a class="btn btn-sand pulse wa-plan" data-plan="el análisis" href="#">💬 Darle mi opinión a Roger</a>
+  </div>
+</section>
+
+<section class="tiers" id="propuesta">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Si quieren avanzar</span>
+      <h2>Tres formas de cerrar las fugas</h2>
+      <p>Sin prisa. Elijan la que les haga sentido, o solo díganme qué opinan.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tier">
+        <div class="lbl">Cimiento</div>
+        <div class="price">$2,500 <small>MXN · pago único</small></div>
+        <ul>
+          <li>Ficha de Google «Grupo Zamna» creada y verificada</li>
+          <li>Un solo teléfono y dirección (NAP) en todas las plataformas</li>
+          <li>Open Graph en todas las páginas (guía para su equipo)</li>
+          <li>Página /links para la bio de Instagram</li>
+          <li>Checklist para sacar los datos internos del HTML</li>
+        </ul>
+        <a class="btn btn-dark" href="#" data-pay>Empezar con Cimiento</a>
+      </div>
+      <div class="tier star">
+        <span class="star-tag">Recomendado</span>
+        <div class="lbl">Crecimiento</div>
+        <div class="price">$4,900 <small>MXN</small></div>
+        <ul>
+          <li>Todo lo de Cimiento</li>
+          <li>Landing de campaña Prana Towers bilingüe (como el demo)</li>
+          <li>Las 245 opiniones llevadas al sitio y al schema</li>
+          <li>Ficha de Prana Towers apuntando a su dominio</li>
+          <li>Arquitectura de marca: Zamna, Almaré y Prana</li>
+          <li>Galerías dentro del sitio en lugar de Drive</li>
+        </ul>
+        <a class="btn btn-wa wa-plan" data-plan="Crecimiento" href="#">Hablar de este plan</a>
+      </div>
+      <div class="tier">
+        <div class="lbl">Autoridad</div>
+        <div class="price">$8,900 <small>MXN</small></div>
+        <ul>
+          <li>Todo lo de Crecimiento</li>
+          <li>Estrategia de contenido de 30 días para IG y TikTok</li>
+          <li>Sistema de reseñas de Google al cierre de cada operación</li>
+          <li>Guion de calificación para ZÍA y WhatsApp</li>
+          <li>Acompañamiento de 3 meses con métricas</li>
+        </ul>
+        <a class="btn btn-wa wa-plan" data-plan="Autoridad" href="#">Hablar de este plan</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:.8rem;margin-top:18px">Precios de esta propuesta, ajustables. El «antes» es su presencia actual; el «ahora» es un demo funcional hecho con información pública.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Preparado por <b>Softvibes Lab</b> · mentoría y laboratorio de transformación digital (ser · hacer · tener).</p>
+  <p>Este análisis usa solo información pública de Grupo Zamna, consultada el 25-oct-2026. Si prefieren que se retire algún dato o imagen, se retira de inmediato. Página no indexada.</p>
+</footer>
+
+<div class="fbar">
+  <div class="wrap">
+    <div><b>¿Qué les pareció, Eduardo y Ale?</b><span>Su opinión me sirve muchísimo, sin compromiso.</span></div>
+    <a class="btn btn-sand wa-plan" data-plan="el análisis" href="#">💬 Escribir mi opinión</a>
+  </div>
+</div>
+
+<script>
+  var SOFTVIBES_WA = 'https://wa.me/527295493319';
+  var PAY_URL = ''; // [PENDIENTE: link de pago del tier Cimiento]
+  var demo = document.getElementById('demo');
+  document.querySelectorAll('.tour button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.tour button').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      demo.src = '../' + b.getAttribute('data-go');
+    });
+  });
+  var device = document.getElementById('device');
+  document.querySelectorAll('.devsel button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.devsel button').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      var d = b.getAttribute('data-dev');
+      device.className = 'device' + (d === 'laptop' ? '' : ' ' + d);
+    });
+  });
+  document.querySelectorAll('.wa-plan').forEach(function(a){
+    var plan = a.getAttribute('data-plan');
+    var msg = plan === 'el análisis'
+      ? 'Hola Roger, soy de Grupo Zamna. Vi el análisis y el demo que nos prepararon y esta es mi opinión: '
+      : 'Hola Roger, soy de Grupo Zamna. Vi el análisis y quiero platicar sobre el plan ' + plan + '.';
+    a.href = SOFTVIBES_WA + '?text=' + encodeURIComponent(msg);
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+  document.querySelectorAll('[data-pay]').forEach(function(a){
+    if (PAY_URL) { a.href = PAY_URL; a.target = '_blank'; a.rel = 'noopener'; return; }
+    a.href = SOFTVIBES_WA + '?text=' + encodeURIComponent('Hola Roger, soy de Grupo Zamna y quiero empezar con el plan Cimiento.');
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ reduce ? el.classList.add('in') : io.observe(el); });
+  function cUp(el){var t=+el.getAttribute('data-count'),s=null,d=1400;
+    if(reduce||!t){el.textContent=t.toLocaleString('es-MX');return;}
+    function st(ts){if(!s)s=ts;var p=Math.min((ts-s)/d,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(t*e).toLocaleString('es-MX');if(p<1)requestAnimationFrame(st);}
+    requestAnimationFrame(st);}
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.n').forEach(cUp);cio.disconnect();}})},{threshold:.3});
+  cio.observe(document.querySelector('.counters'));
+</script>
+</body>
+</html>
